@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>inicio</title>
+
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+     <div class="contenedor">
+        <!--columna izquierda-->
+        <div class="columna-izquierda">
+            <h1 class="titulo">
+                <img src="LOGO.jpg" alt="Logo Mentecuida" class="logo">Mentecuida
+            </h1>
+            <p class="contenido">
+                Ayudamos con el cuidado del bienestar de las personas, siente seguro con la opción que estás tomando, bienvenido a la plataforma de confianza!
+            </p>
+        </div>
+
+        <!--columna derecha login-->
+        <div class="columna-derecha" id="formLoginContainer">
+            <h3>Iniciar sesión</h3>
+            <form id="formLogin" class="inicio-sesion">
+                <input class="controls error" type="email" name="Correo-electronico" id="Correo-electronico" placeholder="Email">
+                <input class="controls error" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                <a href="#" class="link">¿Olvidó su contraseña?</a>
+                <!--<p class="error-texto">Usuario y contraseña incorrecta</p>--> 
+                <input class="botones" type="button"  value="Iniciar sesión">
+                <input class="botones" type="button" id="btnRegistro" value="Crear cuenta nueva">
+            </form>
+        </div>
+
+        <!--columna derecha registro-->
+        <div class="columna-derecha" id="formRegistroContainer" style="display: none;">
+            <h3 class="titulo-registr">Registro</h3>
+            <form id="formRegistro" class="registro" action="#" method="post">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="apellidos" required>
+                <input type="number" name="cedula" placeholder="Cedúla" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <input type="date" id="fecha-naciemiento" name="fecha-naciemiento">
+                <input class="botones" type="button" id="btnCrearCuenta" value="Crear cuenta nueva">
+            </form>
+        </div>
+    </div>
+    
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="logica.js"></script>
+</body>
+</html>
